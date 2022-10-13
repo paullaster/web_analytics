@@ -9,8 +9,17 @@ function getClikckedElement (event) {
     const tagElement = event.target.tagName.toLowerCase ();
     const tagId = event.target.id;
     const tagClass = event.target.className;
-    console.log (tagElement, tagId, tagClass);
+    analysedUserBehavior (tagElement, tagId, tagClass);
 };
 function getElementByID (id) {
     return document.getElementById(id);
+}
+
+function analysedUserBehavior (elment, id, className) {
+    console.log ('clicked element is: ', elment);
+    console.log ('clicked element id is: ', id);
+    console.log ('clicked element class is: ', className);
+    if (elment === 'button') {
+        getElementByID (id).style.backgroundColor = 'red';
+    }
 }
