@@ -23,3 +23,15 @@ function analysedUserBehavior (elment, id, className) {
         getElementByID (id).style.backgroundColor = 'red';
     }
 }
+
+function createElement (elment, id, className) {
+    const newElement = document.createElement (elment);
+    newElement.id = id;
+    newElement.className = className;
+    return newElement;
+}
+
+function addElementToDOM (elment, id, className) {
+    const newElement = createElement (elment, id, className);
+    getElementByID (pid).appendChild (newElement);
+}
