@@ -33,7 +33,7 @@ function analysedUserBehavior (elment, id, className) {
     addElementToDOM ('td', 'analytic_td_tag_name', 'analytic_td', 'analytic_tr_data');
     addElementToDOM ('td', 'analytic_td_tag_id', 'analytic_td', 'analytic_tr_data');
     addElementToDOM ('td', 'analytic_td_tag_class', 'analytic_td', 'analytic_tr_data');
-
+    
     // add text content to table
     //table headins:
     addTextToElement ('analytic_th_tag_name', "Tag Name");
